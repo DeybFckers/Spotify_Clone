@@ -1,0 +1,234 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.main-left{
+    border: none;
+    height: 82vh;
+    width: 20%;
+    background-color:#121212;
+    border-radius: 15px;
+    
+}
+
+.main-right{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    height: 82vh;
+    width: 80%;
+    background-color:#121212;
+    border-radius: 15px;
+    overflow-y: auto;
+}
+
+.main-right .image{
+    display: flex;
+    align-items: flex-end;
+    height: 45%;
+    background-image: 
+         linear-gradient(
+            180deg,
+            rgba(250, 250, 250, 0.5) 0%,    /* semi-transparent */
+            rgba(255, 255, 255, 0.5) 0%,  
+            rgba(115, 115, 115, 0.5) 100%
+        ),
+        url('https://lh3.googleusercontent.com/AgxVBtfE_fdKf6P439aejh842iL1sEwcicfEmEDSfAvsEUyc-OL1s5aAN6Cyf_rjSe6T6gElsJE2HCkU=w1500-h625-p-l90-rj');
+    background-size: cover;
+    background-position: center;  /* centers the image */
+    background-repeat: no-repeat; /* prevents tiling */
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.imagetext{
+    color: white;
+    padding: 20px ;
+    cursor: default;
+}
+
+.imagetext h1{
+    margin: 0;
+    font-size: clamp(2rem, 6vw, 6rem);
+}
+
+.imagetext p{
+    margin: 0;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+.verify-icon{
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    border-radius: 50%;
+    background-color: #4cb3ff;
+}
+
+.main-right .songs{
+    height: 55%;
+    background: linear-gradient(360deg,rgba(18, 18, 18, 1) 0%, rgba(18, 18, 18, 1) 50%, rgba(41, 41, 41, 1) 100%);
+}
+
+.options{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 24px;
+}
+
+.play-btn{
+    background-color: #1ed760;
+    height: 56px;
+    width: 56px;
+    border: none;
+    border-radius: 50%;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.play-btn:hover{
+    cursor: pointer;
+    background-color: #3ae075;
+
+}
+
+.shuffle-btn{
+    background-color: transparent;
+    color: #b3b3b3; 
+    border: none;
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    padding: 0;
+}
+
+.shuffle-btn:hover{
+    cursor: pointer;
+    color: #f9f9f9;
+}
+
+.follow-btn{
+    background-color: transparent;
+    color: #fcfcfc;
+    font-weight: bold;
+    border: 1px solid;
+    border-color:#b3b3b3;
+    font-size: 0.8rem;
+    height: 2rem;
+    width: 6rem;
+    border-radius: 30px;
+}
+
+.follow-btn:hover{
+    cursor: pointer;
+    border-color: #f9f9f9;
+}
+
+.playlist{
+    display: flex;
+    flex-direction: row;
+    padding: 0 24px;
+}
+
+/* right */
+.playlist-right{
+    width: 50%;
+}
+
+.popular{
+    color: white;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.list-text{
+    display: grid;
+    grid-template-columns:
+        2rem        /* number */
+        48px        /* image */
+        1fr         /* title (flexible) */
+        10ch        /* views */
+        2rem        /* check button */
+        4ch;        /* minute */
+    align-items: center;
+    gap: 1.5rem;
+    padding: 8 16;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: left;
+}
+
+.playlist-btn{
+    width: 100%;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 8px;
+}
+
+.playlist-btn:hover{
+    background-color:#1f1f1f; 
+}
+
+.list-text p{
+    margin: 0;
+}
+
+.check-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1ed760;
+    border: none;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 20px;
+}
+
+.check-btn:hover{
+    cursor: pointer;
+}
+
+.views, .minute{
+    color:#b3b3b3;
+}
+
+.music-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: clamp(1rem, 2.5vw, 1rem); /* Adjust the font size */
+    line-height: 1.2; /* Optional line height adjustment */
+}
+
+.seemore-btn{
+    padding: 8 16;
+    background-color: transparent;
+    color: #b3b3b3;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.seemore-btn:hover{
+    cursor: pointer;
+    color: #f9f9f9;
+}
+
+/* left */
+
+.playlist-left{
+    width: 50%;
+    
+}
+
+.artist{
+    color: white;
+    margin: 0;
+    white-space: nowrap;
+}
+
+
+
+/* transition: transform 0.2s ease, color 0.2s ease; */

@@ -2,7 +2,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Spotify Clone</title>
 </head>
@@ -14,9 +16,10 @@
 
         <div class="searchbar">
             <button class="home-btn"><i class="fa-solid fa-house"></i></button>
-            <div class="search-wrapper">
+            <div class="searchbar-container">
                 <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
                 <input type="text" class="searchInput" placeholder="What do you want to play?">
+                <div class="divider"></div>
                 <button class="browse-btn"><i class="fa-solid fa-basket-shopping"></i></button>
             </div>
         </div>
@@ -24,11 +27,59 @@
         <div class="navbar-links">
             <button class="premium-btn">Explore Premium</button>
             <button class="install-btn"><i class="fa-solid fa-download"></i> Install App</button>
-            <button class="notify-btn"><i class="fa-solid fa-bell"></i></button>
-            <button class="friend-btn"><i class="fa-solid fa-people-group"></i></button>
-            <button class="profile-btn"><i class="fa-solid fa-user"></i></button>
+            <button class="notifyfriend-btn"><i class="fa-regular fa-bell"></i></i></button>
+            <button class="notifyfriend-btn"><i class="fa-solid fa-people-group"></i></button>
+            <button class="profile-btn">D</button>
         </div>
     </div>
 
+    <div class="main">
+        <div class="main-left">
+
+        </div>
+
+        <div class="main-right">
+
+            <div class="image">
+                <div class="imagetext">
+                    <p class="verify"><i class="fa-solid fa-check verify-icon"></i> Verified Artist</p>
+                    <h1 class="artist">$uicideboy$</h1>
+                    <p class="listeners">10,636,676 monthly listeners</p>
+                </div>
+            </div>
+
+            <div class="songs">
+
+                <div class="options">
+                    <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                    <button class="shuffle-btn"><i class="fa-solid fa-shuffle"></i></button>
+                    <button class="follow-btn">Follow</button>
+                </div>
+
+                <div class="playlist">
+                    <div class="playlist-left">
+                        <h2 class="popular">Popular</h2>
+                        <div class="list" id="list"></div>
+                        <button id="seemore-btn" class="seemore-btn">See More</button>
+                    </div>
+
+                    <div class="playlist-right">
+                        <h2 class="artist">Artist Pick</h2>
+                        <div class="artist-pick">
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        
+    </div>
+
 </body>
+<script src="playlist.js"></script>
 </html>
