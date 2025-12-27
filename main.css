@@ -24,6 +24,26 @@
     overflow-y: auto;
 }
 
+/*Scrollbar*/
+.main-right::-webkit-scrollbar {
+    width: 8px;  /* Width of the scrollbar */
+}
+
+.main-right::-webkit-scrollbar-track {
+    background: #333;  /* Dark gray background for the scrollbar track */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.main-right::-webkit-scrollbar-thumb {
+    background: #888;  /* Lighter gray color for the thumb */
+    border-radius: 10px; /* Rounded corners for the thumb */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.main-right::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker shade when the thumb is hovered */
+}
+
 .main-right .image{
     display: flex;
     align-items: flex-end;
@@ -128,6 +148,7 @@
     display: flex;
     flex-direction: row;
     padding: 0 24px;
+    margin-bottom: 24px;
 }
 
 /* right */
@@ -146,7 +167,7 @@
     grid-template-columns:
         2rem        /* number */
         48px        /* image */
-        1fr         /* title (flexible) */
+        0.8fr         /* title (flexible) */
         10ch        /* views */
         2rem        /* check button */
         4ch;        /* minute */
@@ -216,6 +237,11 @@
     color: #f9f9f9;
 }
 
+.seemore-btn:focus{
+    outline: none;
+    border: none;
+}
+
 /* left */
 
 .playlist-left{
@@ -227,7 +253,210 @@
     color: white;
     margin: 0;
     white-space: nowrap;
+    margin-bottom: 16px;
 }
+
+.album-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-image: 
+    linear-gradient(
+    rgba(0,0,0,0.45),
+    rgba(0,0,0,0.45)), 
+    url(https://i.scdn.co/image/ab67616d0000b27355e5812ec3cdf5f0ede5aa84);
+    width: 350px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;  /* centers the image */
+    border-radius: 10px;
+    padding: 10px;
+   
+}
+
+.album-image:hover{
+    cursor: pointer;
+}
+
+.top img{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.top{
+    display: inline-flex;   
+    background-color: white;
+    white-space: nowrap;
+    padding: 4px;
+    align-items: center;
+    border-radius: 999px;
+    
+}
+
+.top p{
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    margin-left: 8px;
+}
+
+.bottom{
+    display: flex;
+}
+
+.bottom img{
+    width: 100px;
+    height: 100px;
+}
+
+.bottom-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    justify-content: center;
+}
+
+.bottom-text h4{
+    margin: 0;
+    color: white;
+}
+
+.bottom-text p{
+    margin: 0;
+    color: #b3b3b3;
+}
+
+.discrography{
+    padding: 0 24px;
+    margin-bottom: 24px;
+}
+
+.discrography h2{
+    display: inline-block;
+    margin: 0;
+    color: white;
+    margin-bottom: 15px;
+    
+}
+
+.discrography h2:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.discrography-options{
+    margin-bottom: 20px;
+}
+
+.discrography-options button{
+    padding: 10px;
+    border: none;
+    border-radius: 999px;
+    background-color: #1f1f1f;
+    color: white;
+    margin-right: 5px;
+}
+
+.discrography-options button:hover{
+    cursor: pointer;
+    color: #f9f9f9;
+}
+
+.release{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    
+}
+
+.release-button{
+    display: flex;
+    flex-direction: column;
+    padding: 12;
+    border: none;
+    text-align: left;
+    background-color: transparent;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    width: 206px;
+}
+
+.release-button:hover{
+    cursor: pointer;
+    background-color:#1f1f1f;
+}
+
+.release-button img{
+    width: 175px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.datetype{
+    display: flex;
+    
+}
+
+.release-button h3{
+    flex-shrink: 0;
+    margin: 0;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.release-button h3:hover{
+    text-decoration: underline;
+}
+
+.release-button p {
+    margin: 0;
+    color: #b3b3b3; 
+    margin-right: 0.25em;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+    padding-bottom: 24px;
+}
+
+.about h2{
+    margin: 0;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.about-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 55rem;
+    height: 32rem;
+    background-image: url(https://i.scdn.co/image/ab6761610000e5ebc4817922f21a5f2a36e12bf2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.about-image h4{
+    margin: 0;
+    color: white;
+}
+.about-image p {
+    color: white;
+}
+
+
+
+
 
 
 

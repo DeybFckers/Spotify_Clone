@@ -37,7 +37,7 @@ const playlists = [
     {
         num: "6",
         img: "https://i.scdn.co/image/ab67616d0000b273dcff3103179d992594a227db",
-        title: "Kill Yourself(Part III)",
+        title: "Kill Yourself (Part III)",
         views: "779,342,770",
         minute: "2:25",
     },
