@@ -4,14 +4,107 @@
     gap: 16px;
 }
 
+.main-left,
+.main-right {
+    box-sizing: border-box;
+}
+
+/*Main Left*/
+
 .main-left{
     border: none;
     height: 82vh;
     width: 20%;
     background-color:#121212;
     border-radius: 15px;
+    padding: 0 16px;
+    padding-top: 16px;
+    padding-bottom: 8px;
+}
+
+.left-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     
 }
+
+.left-header h4{
+    color: white;
+    margin: 0;
+}
+
+.create{
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #1f1f1f;
+    border: none;
+    border-radius: 9999px; 
+    color: white;
+}
+
+.create:hover{
+    background-color: #2a2a2a;
+    cursor: pointer;
+}
+
+.left-playlist{
+    margin-top: 15px;
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #1f1f1f;
+    border: none;
+    border-radius: 9999px; 
+    color: white;
+}
+
+.left-search{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-searchbar{
+    border: none;
+    border-radius: 8px;
+    padding: 5;
+    width: fit-content;
+    height: fit-content;
+}
+
+.left-searchbtn{
+    font-size: 1.3rem;
+    color: #b3b3b3;
+    background-color: transparent; 
+    border: none;
+    padding: 0;
+}
+
+.left-input{
+    margin-left: 5px;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    color: white;
+}
+
+.recent-btn{
+    background-color: transparent;
+    border: none;
+    color: #b3b3b3;
+}
+
+.recent-btn:hover{
+    cursor: pointer;
+    color: #f9f9f9;
+    font-size: 14px;
+}
+
+
+/*Main Right*/
 
 .main-right{
     display: flex;
@@ -444,6 +537,7 @@
     filter: grayscale(100%);
     border-radius: 10px;
     padding: 25px;
+    margin-bottom: 30px;
 }
 
 .about-image h4{
@@ -452,6 +546,139 @@
 }
 .about-image p {
     color: white;
+}
+
+hr {
+  border: none;
+  height: 1px;  
+  background-color: #b3b3b3;
+  margin: 0 24px;
+  margin-bottom: 50px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    padding: 0 24px;
+    justify-content: space-between;
+}
+
+.footer h4{
+    color: white;
+    margin: 0;
+
+}
+
+.company p{
+    width: fit-content;
+    color: #b3b3b3;
+    margin: 8px 0;
+}
+
+.company p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #f9f9f9;
+}
+
+.community p{
+    width: fit-content;
+    color: #b3b3b3;
+    margin: 8px 0;
+}
+
+.community p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #f9f9f9;
+}
+
+.useful p{
+    width: fit-content;
+    color: #b3b3b3;
+    margin: 8px 0;
+}
+
+.useful p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #f9f9f9;
+}
+
+.plans p{
+    width: fit-content;
+    color: #b3b3b3;
+    margin: 8px 0;
+}
+
+.plans p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #f9f9f9;
+}
+
+.socmed{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.socmed button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    font-size: 1rem;
+    background-color: #1f1f1f;
+    color: white; 
+    border: none;
+}
+
+.socmed button:hover{
+    background-color: #2a2a2a;
+    cursor: pointer;
+}
+
+.hr1{
+    border: none;
+  height: 1px;  
+  background-color: #b3b3b3;
+  margin: 0 24px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.footer2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 24px;
+}
+
+.footer-left{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.footer-left p{
+    color: #b3b3b3;
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.footer-left p:hover{
+    cursor: pointer;
+    color: #f9f9f9;
+}
+
+.footer-right p{
+    color: #b3b3b3;
+    font-size: 14px;
+    margin:0;
+    margin-bottom: 30px;
 }
 
 
